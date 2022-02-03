@@ -1,0 +1,18 @@
+if __name__ == '__main__':
+    grade=[]
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        grade.append([name,score])
+        
+    sorted_scoures =sorted(list(set([x[1] for x in grade])))
+    
+    second_lowest=sorted_scoures[1]
+    
+    low_final_list=[]
+    for  student in grade:
+       if second_lowest == student[1]:
+            low_final_list.append(student[0])
+    
+    for student in sorted(low_final_list):
+        print(student)
