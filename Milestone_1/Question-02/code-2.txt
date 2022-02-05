@@ -1,6 +1,6 @@
 Question 2:
-	a=input()
-	b=input()
+	a=int(input())
+	b=int(input())
 	s=a+b
 	d=a-b
 	p=a*b
