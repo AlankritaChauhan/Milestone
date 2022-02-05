@@ -1,14 +1,14 @@
 Question 5:
 	def swap_case(s):
-	    output = '';
+	    output = ''
     	    for char in s:
             if(char.isupper()==True):
-                output += (char.lower());
+                output += (char.lower())
             elif(char.islower()==True):
-                output += (char.upper());
+                output += (char.upper())
             else:
-                output += char;
-    	    return Output;
+                output += char
+    	    return output
     
 
 	if __name__ == '__main__':
