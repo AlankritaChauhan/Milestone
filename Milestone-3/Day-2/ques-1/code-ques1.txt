@@ -1,0 +1,21 @@
+class Solution:
+    def minimumSum(self, num: int) -> int:
+        digits = []
+        for i in str(num):
+            digits.append(int(i))
+        digits.sort()
+        while digits:
+            if digits[0] == 0:
+                digits.pop(0)
+            else:
+                break
+        N = len(digits)
+        if N == 4:
+            return digits[0]*10+digits[-1] +digits[1]*10+digits[2]
+        elif N == 3:
+            return digits[0] * 10 + digits[1] + digits[2]
+        elif N == 2:
+            return digits[0] + digits[1]
+        elif N == 1:
+            return digits[0]	
+        
